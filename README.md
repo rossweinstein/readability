@@ -42,7 +42,7 @@ private void cleanText(List<String> text) {
 
 ## About This Project
 ### Origin
-This project is an extension of one of my classroom assignments.  We were tasked to find each unique word in Lewis Carroll's *Alice in Wonderland* and record their frequency.  While working on this assignment, which was originally in Python, I had the idea to expand on the basic requirements by adding readability tests.
+This project is an extension of one of my classroom assignments.  We were tasked to find each unique word in Lewis Carroll's *Alice's Adventures in Wonderland* and record their frequency.  While working on this assignment, which was originally in Python, I had the idea to expand on the basic requirements by adding readability tests.
 
 ### Installation
 Currently, the only way to get this code is to clone the repository.
@@ -92,7 +92,7 @@ text.analyze();
 String title = text.getTitle();
 Map<String, Double> results = text.getResults();
 ```
-The results will be a map with these keys:  
+The results will be a Map with these keys:  
 * words
 * sentences
 * letters
@@ -110,7 +110,7 @@ text.analyze();
 String title = text.getTitle();
 Map<String, Double> results = text.getResults();
 ```
-The results will be a map with these keys:  
+The results will be a Map with these keys:  
 * flesch reading ease
 * flesch-kincaid grade level
 * gunning fog
