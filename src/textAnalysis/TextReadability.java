@@ -20,10 +20,10 @@ public class TextReadability implements TextAnalysis {
 
 	private Map<String, Double> textValues;
 	private Map<String, Double> results;
-	private TextStatistics text;
+	private TextMetrics text;
 
 	public TextReadability(Path filePath) {
-		this.text = new TextStatistics(filePath);
+		this.text = new TextMetrics(filePath);
 		this.text.analyze();
 		this.textValues = this.text.getResults();
 		this.results = new HashMap<String, Double>();

@@ -13,15 +13,15 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TextStatisticsTest {
+public class TextMetricsTest {
 	
-	TextStatistics textstats;
+	TextMetrics textstats;
 	Path filePath = Paths.get("test/sampleForReadFile/someText.txt/");
 	Map<String, Double> expected;
 	
 	@Before
 	public void setUp() {
-		this.textstats = new TextStatistics(filePath);
+		this.textstats = new TextMetrics(filePath);
 		this.textstats.analyze();
 		this.expected = new HashMap<>();
 		this.populateMap();

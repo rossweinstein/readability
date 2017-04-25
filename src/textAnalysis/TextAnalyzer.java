@@ -26,7 +26,7 @@ public class TextAnalyzer {
 		} else if (option.equals(AnalysisOption.READABILITY_ONLY)) {
 			return new TextReadability(filePath);
 		} else {
-			return new TextStatistics(filePath);
+			return new TextMetrics(filePath);
 		}
 	}
 }

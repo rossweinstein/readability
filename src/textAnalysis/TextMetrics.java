@@ -18,13 +18,13 @@ import java.util.Map;
  * 
  * @author RossWeinstein
  */
-public class TextStatistics implements TextAnalysis {
+public class TextMetrics implements TextAnalysis {
 
 	private ReadText text;
 	private Map<String, Double> results;
 	private SyllableDetector syllables;
 
-	public TextStatistics(Path text) {
+	public TextMetrics(Path text) {
 		this.text = new ReadText(text);
 		this.text.processText();
 		this.results = new HashMap<>();

@@ -23,6 +23,6 @@ public class TextAnalyzerTest {
 	
 	@Test
 	public void isOfTypeTextStatistics() {
-		assertTrue("FAIL - build wrong class type", TextAnalyzer.analyzeText(filePath, AnalysisOption.STATS_ONLY) instanceof TextStatistics);
+		assertTrue("FAIL - build wrong class type", TextAnalyzer.analyzeText(filePath, AnalysisOption.METRICS_ONLY) instanceof TextMetrics);
 	}
 }
