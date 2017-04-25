@@ -85,9 +85,9 @@ Map<String, Integer> textDict = text2.getTextDictionary();
 ```
 The text dictionary uses each unique word as the key with the integer as the number of times that word is found in the text.  
   
-2. Analyze a text and collect a number of common statistics.  
+2. Analyze a text and collect a number of metrics.  
 ```java
-TextAnalysis text = TextAnalyzer.analyzeText(Paths.get("somePath"), AnalysisOption.STATS_ONLY);
+TextAnalysis text = TextAnalyzer.analyzeText(Paths.get("somePath"), AnalysisOption.METRICS_ONLY);
 text.analyze();
 String title = text.getTitle();
 Map<String, Double> results = text.getResults();
